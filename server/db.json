@@ -1,0 +1,786 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "test@gmail.com",
+      "instagram": "priambodo.kurniawan",
+      "whatsapp": "+6287889562890",
+      "website": "https://priambodokurniawan.com",
+      "brand": "toko iam",
+      "status": "open"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "UserId": 1,
+      "productName": "Ayam tepung sambal matah",
+      "photo": [
+        "https://www.masakapahariini.com/wp-content/uploads/2019/09/Ayam-Goreng-Sambal-Matah-Royco-750x440.jpg"
+      ],
+      "isIlustrationImage": true,
+      "description": "Menggiurkan bukan sepiring ayam sambal matah dipadukan nasi putih hangat? Ayam goreng renyah terasa gurih bertemu dengan sambal matah yang pedas dan segar. Dijamin ketagihan menyantapnya, nih!",
+      "price": 25000,
+      "stock": 15,
+      "location": [
+        {
+          "contactPerson": "Adel (Jakarta Barat)",
+          "whatsapp": "+6287889562890",
+          "province": "Jakarta Barat",
+          "openOrder": "09.00",
+          "closeOrder": "18.00"
+        },
+        {
+          "contactPerson": "Risa (Jakarta Selatan)",
+          "whatsapp": "+6287889562890",
+          "province": "Jakarta Selatan",
+          "openOrder": "09.00",
+          "closeOrder": "18.00"
+        }
+      ],
+      "categories": [
+        {
+          "id": 1,
+          "name": "Makanan Berat",
+          "icon": ""
+        },
+        {
+          "id": 3,
+          "name": "Siap Saji",
+          "icon": ""
+        }
+      ],
+      "tag": [
+        "makanan berat",
+        "ayam goreng"
+      ],
+      "templateOrder": "Nama: {nama_kamu}, Alamat: {alamat_kamu}",
+      "addedBy": {
+        "name": "Carlos Graves",
+        "avatar": "https://randomuser.me/api/portraits/men/94.jpg",
+        "email": "carlos.graves@example.com"
+      }
+    },
+    {
+      "id": 2,
+      "UserId": 1,
+      "productName": "Bakso Goreng",
+      "photo": [
+        "https://i1.wp.com/resepkoki.id/wp-content/uploads/2017/02/Resep-Bakso-Goreng.jpg?fit=1080%2C1079&ssl=1"
+      ],
+      "isIlustrationImage": true,
+      "description": "Menggiurkan bukan sepiring ayam sambal matah dipadukan nasi putih hangat? Ayam goreng renyah terasa gurih bertemu dengan sambal matah yang pedas dan segar. Dijamin ketagihan menyantapnya, nih!",
+      "price": 15000,
+      "stock": 25,
+      "location": [
+        {
+          "contactPerson": "Adel (Jakarta Barat)",
+          "whatsapp": "+6287889562890",
+          "province": "Jakarta Barat",
+          "openOrder": "09.00",
+          "closeOrder": "18.00"
+        },
+        {
+          "contactPerson": "Risa (Jakarta Selatan)",
+          "whatsapp": "+6287889562890",
+          "province": "Jakarta Selatan",
+          "openOrder": "09.00",
+          "closeOrder": "18.00"
+        }
+      ],
+      "categories": [
+        {
+          "id": 4,
+          "name": "Cemilan",
+          "icon": ""
+        },
+        {
+          "id": 3,
+          "name": "Siap Saji",
+          "icon": ""
+        }
+      ],
+      "tag": [
+        "makanan ringan",
+        "bakso goreng"
+      ],
+      "templateOrder": "Nama: {nama_kamu}, Alamat: {alamat_kamu}",
+      "addedBy": {
+        "name": "Bessie Beck",
+        "avatar": "https://randomuser.me/api/portraits/women/25.jpg",
+        "email": "bessie.beck@example.com"
+      }
+    }
+  ],
+  "categories": [
+    {
+      "name": "semua",
+      "value": "",
+      "icon": "https://image.flaticon.com/icons/svg/1722/1722017.svg"
+    },
+    {
+      "name": "ikan",
+      "value": "ikan",
+      "icon": "https://image.flaticon.com/icons/svg/541/541758.svg"
+    },
+    {
+      "name": "beras",
+      "value": "beras",
+      "icon": "https://image.flaticon.com/icons/svg/673/673552.svg"
+    },
+    {
+      "name": "ayam",
+      "value": "ayam",
+      "icon": "https://image.flaticon.com/icons/svg/541/541757.svg"
+    },
+    {
+      "name": "daging",
+      "value": "daging",
+      "icon": "https://image.flaticon.com/icons/svg/541/541754.svg"
+    },
+    {
+      "name": "buah",
+      "value": "buah",
+      "icon": "https://image.flaticon.com/icons/svg/1147/1147934.svg"
+    },
+    {
+      "name": "bumbu",
+      "value": "bumbu",
+      "icon": "https://image.flaticon.com/icons/svg/2035/2035325.svg"
+    }
+  ],
+  "pasar": [
+    {
+      "id": "all",
+      "name": "Semua Pasar"
+    },
+    {
+      "id": "1",
+      "name": "Pasar Anyar Bahari"
+    },
+    {
+      "id": "2",
+      "name": "Pasar Asem Reges"
+    },
+    {
+      "id": "3",
+      "name": "Pasar Baru Metro Atom"
+    },
+    {
+      "id": "4",
+      "name": "Pasar Bata Putih"
+    },
+    {
+      "id": "5",
+      "name": "Pasar Bendungan Hilir"
+    },
+    {
+      "id": "6",
+      "name": "Pasar Bidadari"
+    },
+    {
+      "id": "7",
+      "name": "Pasar Blok A Fatmawati"
+    },
+    {
+      "id": "8",
+      "name": "Pasar Melawai Blok M"
+    },
+    {
+      "id": "9",
+      "name": "Pasar Blora "
+    },
+    {
+      "id": "10",
+      "name": "Pasar Bojong Indah"
+    },
+    {
+      "id": "11",
+      "name": "Pasar Bukit Duri Puteran"
+    },
+    {
+      "id": "12",
+      "name": "Pasar Burung"
+    },
+    {
+      "id": "13",
+      "name": "Pasar Cakung"
+    },
+    {
+      "id": "14",
+      "name": "Pasar Cawang Kapling"
+    },
+    {
+      "id": "15",
+      "name": "Pasar Cempaka Putih"
+    },
+    {
+      "id": "16",
+      "name": "Pasar Cengkareng "
+    },
+    {
+      "id": "17",
+      "name": "Pasar Cibubur"
+    },
+    {
+      "id": "18",
+      "name": "Pasar Cideng Thomas"
+    },
+    {
+      "id": "19",
+      "name": "Pasar Cidodol"
+    },
+    {
+      "id": "20",
+      "name": "Pasar Cijantung"
+    },
+    {
+      "id": "21",
+      "name": "Pasar Cikini Ampiun"
+    },
+    {
+      "id": "22",
+      "name": "Pasar Cilincing"
+    },
+    {
+      "id": "23",
+      "name": "Pasar Cipete"
+    },
+    {
+      "id": "24",
+      "name": "Pasar Cipete Selatan"
+    },
+    {
+      "id": "25",
+      "name": "Pasar Cipinang Besar"
+    },
+    {
+      "id": "26",
+      "name": "Pasar Cipinang Kebembem"
+    },
+    {
+      "id": "27",
+      "name": "Pasar Cipinang Muara"
+    },
+    {
+      "id": "28",
+      "name": "Pasar Ciplak"
+    },
+    {
+      "id": "29",
+      "name": "Pasar Cipulir"
+    },
+    {
+      "id": "30",
+      "name": "Pasar Ciracas"
+    },
+    {
+      "id": "31",
+      "name": "Pasar Citra Garden"
+    },
+    {
+      "id": "32",
+      "name": "Pasar Diponegoro"
+    },
+    {
+      "id": "33",
+      "name": "Pasar Duren Sawit"
+    },
+    {
+      "id": "34",
+      "name": "Pasar Duta Mas"
+    },
+    {
+      "id": "35",
+      "name": "Pasar Enjo"
+    },
+    {
+      "id": "36",
+      "name": "Pasar Gandaria"
+    },
+    {
+      "id": "37",
+      "name": "Pasar Ganefo"
+    },
+    {
+      "id": "38",
+      "name": "Pasar Gang Kancil"
+    },
+    {
+      "id": "39",
+      "name": "Pasar Gardu Asem"
+    },
+    {
+      "id": "40",
+      "name": "Pasar Gembrong"
+    },
+    {
+      "id": "41",
+      "name": "Pasar Glodok"
+    },
+    {
+      "id": "42",
+      "name": "Pasar Gondangdia"
+    },
+    {
+      "id": "43",
+      "name": "Pasar Grogol"
+    },
+    {
+      "id": "44",
+      "name": "Pasar Cikini Hias Rias"
+    },
+    {
+      "id": "45",
+      "name": "Pasar HWI Lindetives"
+    },
+    {
+      "id": "46",
+      "name": "Pasar Ikan Luar Batang"
+    },
+    {
+      "id": "47",
+      "name": "UPB Induk Kramat Jati"
+    },
+    {
+      "id": "48",
+      "name": "Pasar Jambul"
+    },
+    {
+      "id": "49",
+      "name": "Pasar Jati Rawasari"
+    },
+    {
+      "id": "50",
+      "name": "Pasar Jatinegara"
+    },
+    {
+      "id": "51",
+      "name": "Pasar Jelambar Polri"
+    },
+    {
+      "id": "52",
+      "name": "Pasar Jembatan Besi"
+    },
+    {
+      "id": "53",
+      "name": "Pasar Jembatan Dua"
+    },
+    {
+      "id": "54",
+      "name": "Pasar Jembatan Lima"
+    },
+    {
+      "id": "55",
+      "name": "Pasar Jembatan Merah"
+    },
+    {
+      "id": "56",
+      "name": "Pasar Pertokoan Jl Biak"
+    },
+    {
+      "id": "57",
+      "name": "Pasar Johar Baru"
+    },
+    {
+      "id": "58",
+      "name": "Pasar Kalibaru"
+    },
+    {
+      "id": "59",
+      "name": "Pasar Kalideres"
+    },
+    {
+      "id": "60",
+      "name": "Pasar Kampung Ambon"
+    },
+    {
+      "id": "61",
+      "name": "Pasar Kampung Duri"
+    },
+    {
+      "id": "62",
+      "name": "Pasar Karang Anyar"
+    },
+    {
+      "id": "63",
+      "name": "Pasar Karet Belakang"
+    },
+    {
+      "id": "64",
+      "name": "Pasar Karet Pedurenan"
+    },
+    {
+      "id": "65",
+      "name": "Pasar Kayu Jati"
+    },
+    {
+      "id": "66",
+      "name": "Pasar Kebayoran Lama"
+    },
+    {
+      "id": "67",
+      "name": "Pasar Kebon Bawang"
+    },
+    {
+      "id": "68",
+      "name": "Pasar Pertokoan Waru"
+    },
+    {
+      "id": "69",
+      "name": "Pasar Kedoya"
+    },
+    {
+      "id": "70",
+      "name": "Pasar Kelapa Gading"
+    },
+    {
+      "id": "71",
+      "name": "Pasar Kenari"
+    },
+    {
+      "id": "72",
+      "name": "Pasar Klender SS"
+    },
+    {
+      "id": "73",
+      "name": "Pasar Koja Baru"
+    },
+    {
+      "id": "74",
+      "name": "Pasar Kombongan"
+    },
+    {
+      "id": "75",
+      "name": "Pasar Kramat Jati"
+    },
+    {
+      "id": "76",
+      "name": "Pasar Kramat Jaya"
+    },
+    {
+      "id": "77",
+      "name": "Pasar Kwitang Dalam"
+    },
+    {
+      "id": "78",
+      "name": "Pasar Lenteng Agung"
+    },
+    {
+      "id": "79",
+      "name": "Pasar Lokomotif"
+    },
+    {
+      "id": "80",
+      "name": "Pasar Lontar (Utara)"
+    },
+    {
+      "id": "81",
+      "name": "Pasar Lontar (Pusat)"
+    },
+    {
+      "id": "82",
+      "name": "Pasar Mampang Prapatan"
+    },
+    {
+      "id": "83",
+      "name": "Pasar Mandiri Kelapa Gading"
+    },
+    {
+      "id": "84",
+      "name": "Pasar Mangga Besar"
+    },
+    {
+      "id": "85",
+      "name": "Pasar Manggis"
+    },
+    {
+      "id": "86",
+      "name": "Pasar Matraman Kebon Kosong"
+    },
+    {
+      "id": "87",
+      "name": "UPB Mayestik"
+    },
+    {
+      "id": "88",
+      "name": "Pasar Mede"
+    },
+    {
+      "id": "89",
+      "name": "Pasar Menteng Pulo"
+    },
+    {
+      "id": "90",
+      "name": "Pasar Pasar Minggu"
+    },
+    {
+      "id": "91",
+      "name": "Pasar Muara Angke"
+    },
+    {
+      "id": "92",
+      "name": "Pasar Muncang"
+    },
+    {
+      "id": "93",
+      "name": "Pasar Nangka Bungkur"
+    },
+    {
+      "id": "94",
+      "name": "Pasar Pademangan Barat"
+    },
+    {
+      "id": "95",
+      "name": "Pasar Pademangan Timur"
+    },
+    {
+      "id": "96",
+      "name": "Pasar Pal Merah"
+    },
+    {
+      "id": "97",
+      "name": "Pasar Pal Meriam"
+    },
+    {
+      "id": "98",
+      "name": "Pasar Pantai Indah Kapuk"
+    },
+    {
+      "id": "99",
+      "name": "Pasar Pagi"
+    },
+    {
+      "id": "100",
+      "name": "Pasar Paseban"
+    },
+    {
+      "id": "101",
+      "name": "Pasar Pecah Kulit"
+    },
+    {
+      "id": "102",
+      "name": "Pasar Pejagalan"
+    },
+    {
+      "id": "103",
+      "name": "Pasar Pelita "
+    },
+    {
+      "id": "104",
+      "name": "Pasar Perniagaan "
+    },
+    {
+      "id": "105",
+      "name": "Pasar Perumnas Klender"
+    },
+    {
+      "id": "106",
+      "name": "Pasar Pesanggrahan"
+    },
+    {
+      "id": "107",
+      "name": "Pasar Petak Sembilan"
+    },
+    {
+      "id": "108",
+      "name": "Pasar Petojo Enclek"
+    },
+    {
+      "id": "109",
+      "name": "Pasar Petojo Ilir"
+    },
+    {
+      "id": "110",
+      "name": "Pasar Pluit"
+    },
+    {
+      "id": "111",
+      "name": "Pasar Pondok Bambu"
+    },
+    {
+      "id": "112",
+      "name": "Pasar Pondok Indah"
+    },
+    {
+      "id": "113",
+      "name": "Pasar Pondok Labu"
+    },
+    {
+      "id": "114",
+      "name": "Pasar Pos Pengumben"
+    },
+    {
+      "id": "115",
+      "name": "Pasar Pramuka"
+    },
+    {
+      "id": "116",
+      "name": "Pasar Pramuka Pojok"
+    },
+    {
+      "id": "117",
+      "name": "Pasar Pulo Gadung"
+    },
+    {
+      "id": "118",
+      "name": "Pasar Radio Dalam"
+    },
+    {
+      "id": "119",
+      "name": "Pasar Rajawali"
+    },
+    {
+      "id": "120",
+      "name": "Pasar Rawa Badak"
+    },
+    {
+      "id": "121",
+      "name": "Pasar Rawa Bening"
+    },
+    {
+      "id": "122",
+      "name": "Pasar Rawa Sari"
+    },
+    {
+      "id": "123",
+      "name": "Pasar Rawamangun"
+    },
+    {
+      "id": "124",
+      "name": "Pasar Rumput"
+    },
+    {
+      "id": "125",
+      "name": "Pasar Sawah Barat"
+    },
+    {
+      "id": "126",
+      "name": "Pasar Sawah Besar"
+    },
+    {
+      "id": "127",
+      "name": "Pasar Senen Blok VI"
+    },
+    {
+      "id": "128",
+      "name": "Pasar Serdang"
+    },
+    {
+      "id": "129",
+      "name": "Pasar Shanta"
+    },
+    {
+      "id": "130",
+      "name": "Pasar Sinar"
+    },
+    {
+      "id": "131",
+      "name": "Pasar Sindang"
+    },
+    {
+      "id": "132",
+      "name": "Pasar Slipi"
+    },
+    {
+      "id": "133",
+      "name": "Pasar Sukapura"
+    },
+    {
+      "id": "134",
+      "name": "Pasar Sumur Batu"
+    },
+    {
+      "id": "135",
+      "name": "Pasar Sunan Giri"
+    },
+    {
+      "id": "136",
+      "name": "Pasar Sungai Bambu"
+    },
+    {
+      "id": "137",
+      "name": "Pasar Sunter Podomoro"
+    },
+    {
+      "id": "138",
+      "name": "Pasar Surabaya"
+    },
+    {
+      "id": "139",
+      "name": "UPB Tanah Abang Blok A-F"
+    },
+    {
+      "id": "140",
+      "name": "Pasar Tanah Abang Bukit"
+    },
+    {
+      "id": "141",
+      "name": "Pasar Tanah Tinggi Poncol"
+    },
+    {
+      "id": "142",
+      "name": "Pasar Tebet Barat"
+    },
+    {
+      "id": "143",
+      "name": "Pasar Tebet Timur"
+    },
+    {
+      "id": "144",
+      "name": "Pasar Teluk Gong"
+    },
+    {
+      "id": "145",
+      "name": "Pasar Timbul Barat"
+    },
+    {
+      "id": "146",
+      "name": "Pasar Timbul Kartini"
+    },
+    {
+      "id": "147",
+      "name": "Pasar Tomang Barat"
+    },
+    {
+      "id": "148",
+      "name": "Pasar Tugu"
+    },
+    {
+      "id": "149",
+      "name": "Pasar Ujung Menteng"
+    },
+    {
+      "id": "150",
+      "name": "Pasar Walang Baru"
+    },
+    {
+      "id": "151",
+      "name": "Pasar Waru"
+    },
+    {
+      "id": "152",
+      "name": "Pasar Warung Buncit"
+    },
+    {
+      "id": "153",
+      "name": "Pasar Pertokoan Kav.36.A"
+    },
+    {
+      "id": "163",
+      "name": "UPB Tanah Abang Blok G"
+    },
+    {
+      "id": "164",
+      "name": "Pasar Senen Blok III"
+    },
+    {
+      "id": "220",
+      "name": "UPB Kepulauan Seribu"
+    },
+    {
+      "id": "221",
+      "name": "Pasar Kebon Melati"
+    }
+  ]
+}
