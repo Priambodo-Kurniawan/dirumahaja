@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Navbar />
-    <div class="uk-background-muted uk-height-viewport">
+    <div class="uk-background-muted uk-height-viewport" style="padding-top: 70px;">
       <router-view />
       <Footer />
     </div>

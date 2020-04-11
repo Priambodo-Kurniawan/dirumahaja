@@ -3,8 +3,8 @@
     <b>Tipe Produk yang dicari</b>
     <div style="min-height: 120px" class="uk-flex uk-flex-center uk-flex-middle">
       <div v-if="!isLoading" class="uk-position-relative uk-visible-toggle uk-margin-remove-top" tabindex="-1" uk-slider="finite: true">
-        <ul class="uk-slider-items uk-child-width-1-5@s uk-text-center">
-          <li v-for="(category, index) in categories" :key="index">
+        <ul class="uk-slider-items uk-text-center">
+          <li v-for="(category, index) in categories" :key="index" class="uk-width-1-5@m uk-width-1-4">
             <div style="padding: 10px">
               <div 
                 class="uk-box-shadow-small uk-border-circle uk-padding-small" 

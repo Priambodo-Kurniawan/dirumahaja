@@ -48,7 +48,7 @@
             </div>
           </div>
           <div id="modal-detail" class="uk-flex-top" uk-modal>
-            <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-width-4-5">
+            <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
               <button class="uk-modal-close-default" type="button" uk-close></button>
               <div v-if="selectedContact.contactName" class="uk-grid-small uk-margin-top" uk-height-match uk-grid>
                 <div class="uk-width-auto uk-text-center">

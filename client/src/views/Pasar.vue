@@ -1,6 +1,6 @@
 <template>
   <div class="uk-container">
-    <div class="uk-margin-large-top uk-card uk-card-default ">
+    <div class="uk-card uk-card-default ">
       <Banner image="/assets/location.svg" v-if="selectedPasar" :title="selectedPasar.name" />
       <div class="uk-padding">
         <CategoryList />
