@@ -153,21 +153,19 @@ export default {
       this.limit = 5
       axios({
         method: 'GET',
-        url: `http://localhost:4000/pasar/${this.idPasar}?q=${this.query}`
+        url: `https://safe-waters-38064.herokuapp.com/pasar/${this.idPasar}?q=${this.query}`
       })
         .then(({data}) => {
           this.$store.commit('setContacts', data.data)
         })
         .finally(() => {
-          setTimeout(() => {
-            this.isLoading = false
-          }, 2000)
+          this.isLoading = false
         })
     },
     getPasar() {
       axios({
         method: 'GET',
-        url: 'http://localhost:4000/pasar'
+        url: 'https://safe-waters-38064.herokuapp.com/pasar'
       })
         .then(({data}) => {
           this.$store.commit('setPasar', data.data)

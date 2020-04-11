@@ -63,15 +63,13 @@ export default {
       this.isLoading = true
       axios({
         method: 'GET',
-        url: 'http://localhost:4000/news'
+        url: 'https://safe-waters-38064.herokuapp.com/news'
       })
         .then(({data}) => {
           this.$store.commit('setNews', data.data.articles)
         })
         .finally(() => {
-          setTimeout(() => {
-            this.isLoading = false
-          }, 2000)
+          this.isLoading = false
         })
     },
     formatDate(date) {

@@ -59,15 +59,13 @@ export default {
       this.isLoading = true
       axios({
         method: 'GET',
-        url: 'http://localhost:4000/products'
+        url: 'https://safe-waters-38064.herokuapp.com/products'
       })
         .then(({data}) => {
           this.$store.commit('setProducts', data)
         })
         .finally(() => {
-          setTimeout(() => {
-            this.isLoading = false
-          }, 2000)
+          this.isLoading = false
         })
     }
   },

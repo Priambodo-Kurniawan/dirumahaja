@@ -47,15 +47,13 @@ export default {
       this.isLoading = true
       axios({
         method: 'GET',
-        url: 'http://localhost:4000/categories'
+        url: 'https://safe-waters-38064.herokuapp.com/categories'
       })
         .then(({data}) => {
           this.$store.commit('setCategories', data.data)
         })
         .finally(() => {
-          setTimeout(() => {
-            this.isLoading = false
-          }, 2000)
+          this.isLoading = false
         })
     },
     setQuery(value) {
