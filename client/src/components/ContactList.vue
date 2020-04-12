@@ -178,7 +178,7 @@ export default {
       this.$set(this, 'selectedContact', data)
     },
     contactWhatsapp() {
-      let message = `*Hallo Bapak/Ibu ${this.selectedContact.contactName}* \n _${this.selectedContact.pasar}_`
+      let message = `*Hallo Bapak/Ibu ${this.selectedContact.contactName.trim()}* \n _${this.selectedContact.pasar}_`
       let number = '62'+this.selectedContact.contactNumber.split('').slice(1).join('')
       let link = `https://api.whatsapp.com/send?phone=${number}&text=${message}`
       window.location.href = link
