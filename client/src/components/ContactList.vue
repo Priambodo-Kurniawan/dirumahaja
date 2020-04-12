@@ -42,46 +42,9 @@
               <small class="uk-text-muted">Jual: {{contact.category.join(', ').toLowerCase()}}</small>
             </div>
             <div class="uk-width-auto uk-height-1-1 uk-flex uk-flex-middle">
-              <a href="javascript:void(0)" @click="showModal(contact)" class="uk-link-reset">
+              <a href="#modal-detail" uk-toggle @click="showModal(contact)" class="uk-link-reset">
                 <i class="fas fa-phone"></i>
               </a>
-            </div>
-          </div>
-          <div id="modal-detail" class="uk-flex-top" uk-modal>
-            <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
-              <button class="uk-modal-close-default" type="button" uk-close></button>
-              <div v-if="selectedContact.contactName" class="uk-grid-small uk-margin-top" uk-height-match uk-grid>
-                <div class="uk-width-auto uk-text-center">
-                  <div class="uk-background-primary uk-border-circle uk-flex uk-flex-center uk-flex-middle" style="width: 70px; height: 70px;">
-                    <h1 class="uk-margin-remove" style="color: white">
-                      {{selectedContact.contactName.split('')[0]}}
-                    </h1>
-                  </div>
-                </div>
-                <div class="uk-width-expand">
-                  <b>{{selectedContact.contactName}}</b><br>
-                  <span class="uk-text-muted uk-text-capitalize">{{selectedContact.pasar.toLowerCase()}}</span><br>
-                  <small class="uk-text-muted uk-text-capitalize"><i class="fas fa-map-marker-alt uk-text-muted"></i> {{selectedContact.location.toLowerCase()}}</small><br>
-                  <small class="uk-text-muted">Jual: {{selectedContact.category.join(', ').toLowerCase()}}</small>
-                </div>
-                <div class="uk-width-1-1 uk-margin-medium-top">
-                  <div class="uk-grid-small" uk-grid>
-                    <div class="uk-width-auto uk-width-1-2@m">
-                      <a href="javascript:void(0)" @click="contactWhatsapp()" class="uk-width-1-1 uk-button uk-button-primary uk-link-reset" style="color: white !important">
-                        <small><i class="fab fa-whatsapp uk-margin-small-right"></i> Whatsapp</small>
-                      </a>
-                    </div>
-                    <div class="uk-width-expand uk-width-1-2@m">
-                      <a :href="'tel:' + selectedContact.contactNumber" class="uk-width-1-1 uk-button uk-button-secondary uk-link-reset">
-                        <small><i class="fas fa-phone uk-margin-small-right"></i> Call</small>
-                      </a>
-                    </div>
-                  </div>
-                  <div>
-                    <small class="uk-text-muted">*tidak semua penjual memiliki whatsapp</small>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </template>
@@ -96,6 +59,43 @@
       </div>
       <div v-else>
         <Loading />
+      </div>
+      <div id="modal-detail" class="uk-flex-top" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+          <button class="uk-modal-close-default" type="button" uk-close></button>
+          <div v-if="selectedContact.contactName" class="uk-grid-small uk-margin-top" uk-height-match uk-grid>
+            <div class="uk-width-auto uk-text-center">
+              <div class="uk-background-primary uk-border-circle uk-flex uk-flex-center uk-flex-middle" style="width: 70px; height: 70px;">
+                <h1 class="uk-margin-remove" style="color: white">
+                  {{selectedContact.contactName.split('')[0]}}
+                </h1>
+              </div>
+            </div>
+            <div class="uk-width-expand">
+              <b>{{selectedContact.contactName}}</b><br>
+              <span class="uk-text-muted uk-text-capitalize">{{selectedContact.pasar.toLowerCase()}}</span><br>
+              <small class="uk-text-muted uk-text-capitalize"><i class="fas fa-map-marker-alt uk-text-muted"></i> {{selectedContact.location.toLowerCase()}}</small><br>
+              <small class="uk-text-muted">Jual: {{selectedContact.category.join(', ').toLowerCase()}}</small>
+            </div>
+            <div class="uk-width-1-1 uk-margin-medium-top">
+              <div class="uk-grid-small" uk-grid>
+                <div class="uk-width-auto uk-width-1-2@m">
+                  <a href="javascript:void(0)" @click="contactWhatsapp()" class="uk-width-1-1 uk-button uk-button-primary uk-link-reset" style="color: white !important">
+                    <small><i class="fab fa-whatsapp uk-margin-small-right"></i> Whatsapp</small>
+                  </a>
+                </div>
+                <div class="uk-width-expand uk-width-1-2@m">
+                  <a :href="'tel:' + selectedContact.contactNumber" class="uk-width-1-1 uk-button uk-button-secondary uk-link-reset">
+                    <small><i class="fas fa-phone uk-margin-small-right"></i> Call</small>
+                  </a>
+                </div>
+              </div>
+              <div>
+                <small class="uk-text-muted">*tidak semua penjual memiliki whatsapp</small>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -175,8 +175,7 @@ export default {
       this.limit += 5
     },
     showModal(data) {
-      UIkit.modal('#modal-detail').show();
-      this.selectedContact = data
+      this.$set(this, 'selectedContact', data)
     },
     contactWhatsapp() {
       let message = `*Hallo Bapak/Ibu ${this.selectedContact.contactName}* \n _${this.selectedContact.pasar}_`
