@@ -32,7 +32,6 @@ router.get('/pasar', function(req, res) {
 router.get('/pasar/:id', function(req, res) {
   let idPasar = req.params.id
   let searchQuery = req.query.q
-  console.log(searchQuery)
   let data = `draw=1&columns[0][data]=0&columns[0][name]=&columns[0][searchable]=true&columns[0][orderable]=true&columns[0][search][value]=&columns[0][search][regex]=false&columns[1][data]=1&columns[1][name]=&columns[1][searchable]=true&columns[1][orderable]=true&columns[1][search][value]=&columns[1][search][regex]=false&columns[2][data]=2&columns[2][name]=&columns[2][searchable]=true&columns[2][orderable]=true&columns[2][search][value]=&columns[2][search][regex]=false&columns[3][data]=3&columns[3][name]=&columns[3][searchable]=true&columns[3][orderable]=true&columns[3][search][value]=&columns[3][search][regex]=false&order[0][column]=0&order[0][dir]=asc&start=0&length=50&search[value]=${searchQuery}&search[regex]=false&hid_idPasar=${idPasar}`
   axios({
     url: 'http://103.43.129.76:4321/homer/ajax-data-covid19.php',
@@ -74,7 +73,7 @@ router.get('/categories', function(req, res) {
   })
 })
 
-router.get('/news', cache(60), function(req, res) {
+router.get('/news', cache(10), function(req, res) {
   axios({
     url: `http://newsapi.org/v2/everything?q=pangan&sortBy=publishedAt&apiKey=${process.env.APIKEY_NEWS}`,
     method: 'GET'
