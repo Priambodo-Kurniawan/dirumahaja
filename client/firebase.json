@@ -11,6 +11,11 @@
         "source": "**",
         "destination": "/index.html"
       }
-    ]
+    ],
+    "redirects": [ {
+      "source": "www.dirumahaja.web.app",
+      "destination": "https://dirumahaja.web.app",
+      "type": 301
+    }]
   }
 }

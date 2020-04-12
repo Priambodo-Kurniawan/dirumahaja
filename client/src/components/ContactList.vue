@@ -65,13 +65,13 @@
                   <small class="uk-text-muted">Jual: {{selectedContact.category.join(', ').toLowerCase()}}</small>
                 </div>
                 <div class="uk-width-1-1 uk-margin-medium-top">
-                  <div class="uk-child-width-1-2 uk-grid-small" uk-grid>
-                    <div>
+                  <div class="uk-grid-small" uk-grid>
+                    <div class="uk-width-auto uk-width-1-2@m">
                       <a href="javascript:void(0)" @click="contactWhatsapp()" class="uk-width-1-1 uk-button uk-button-primary uk-link-reset" style="color: white !important">
                         <small><i class="fab fa-whatsapp uk-margin-small-right"></i> Whatsapp</small>
                       </a>
                     </div>
-                    <div>
+                    <div class="uk-width-expand uk-width-1-2@m">
                       <a :href="'tel:' + selectedContact.contactNumber" class="uk-width-1-1 uk-button uk-button-secondary uk-link-reset">
                         <small><i class="fas fa-phone uk-margin-small-right"></i> Call</small>
                       </a>
@@ -179,10 +179,7 @@ export default {
       this.selectedContact = data
     },
     contactWhatsapp() {
-      let message = `
-        *Hallo Bapak/Ibu ${this.selectedContact.contactName}* \n
-        _${this.selectedContact.pasar}_
-      `
+      let message = `*Hallo Bapak/Ibu ${this.selectedContact.contactName}* \n _${this.selectedContact.pasar}_`
       let number = '62'+this.selectedContact.contactNumber.split('').slice(1).join('')
       let link = `https://api.whatsapp.com/send?phone=${number}&text=${message}`
       window.location.href = link

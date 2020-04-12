@@ -144,6 +144,11 @@
       "icon": "https://image.flaticon.com/icons/svg/1147/1147934.svg"
     },
     {
+      "name": "sayur",
+      "value": "sayur",
+      "icon": "https://image.flaticon.com/icons/svg/2329/2329865.svg"
+    },
+    {
       "name": "bumbu",
       "value": "bumbu",
       "icon": "https://image.flaticon.com/icons/svg/2035/2035325.svg"
